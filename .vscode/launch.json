@@ -4,11 +4,12 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+        
         {
             "type": "pwa-chrome",
             "request": "launch",
-            "name": "Open HobbiesWiki.html",
-            "file": "/Users/twilson/FED-2207/Assignments/Week 01/HobbiesWiki.html"
+            "name": "Open index.html",
+            "file": "/Users/twilson/FED-2207/Assignments/Week 02/index.html"
         }
     ]
 }

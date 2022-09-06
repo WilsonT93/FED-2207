@@ -1,0 +1,30 @@
+/*{
+    "customers": [
+        {
+            firstName:"Joe",
+            lastName:"Biden",
+            email:"JoeBiden1@yahoo.com"
+            address:"1 White House Dr",
+            state:"DC",
+            zip:"30312"
+        },
+
+        {
+            firstName:"",
+            lastName:"",
+            email:""
+            address:"",
+            state:"",
+            zip:""
+        }, 
+
+        {
+            firstName:"",
+            lastName:"",
+            email:""
+            address:"",
+            state:"",
+            zip:""
+        }
+    ]
+}*/

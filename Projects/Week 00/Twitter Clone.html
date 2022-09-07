@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-
 <html>
     <head>
-        <title>Social House</title>
-        <link rel="stylesheet" href="mainstyles.css">
+    <title>Social House</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="mainstyles.css">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
         
     
     </head>
     <body>
-    <img class ="bkgimg" src= "/Users/twilson/FED-2207/Projects/Week 00/il_1588xN.2616372727_5rff.png">
-    </img>
-
-  <script src="main.js"></script>
   <p class="Banner">Social House</p>
       <div class="login">
       <button type="button" onclick="openForm()">Log In</button>
       </div>
       <div class="Signup">
-      <button type="button">Sign Up</button>
+      <button type="button" onclick="openSignForm()">Sign Up</button>
       </div>
+
+      <img class ="bkgimg" src= "BkgPhoto.png"></img>
 
       <div class="form-popup" id="myForm">
         <form action="/action_page.php" class="form-container">
@@ -31,6 +32,23 @@
           <button type="submit" class="btn">Login</button>
           <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
         </form>
+        </div>
+
+        <div class="signForm-popup" id="mySignForm">
+          <form action="/action_page.php" class="signForm-container">
+
+            <label for="uID"><b>Enter Your Username</b></label>
+            <input type="text" placeholder="Username" name="uID" required>
+            
+            <label for="createEmail"><b>Enter Your Email</b></label>
+            <input type="text" placeholder="Enter Email" name="createEmail" required>
+        
+            <label for="setPsw"><b>Enter New Password</b></label>
+            <input type="password" placeholder="Enter Password" name="setPsw" required>
+        
+            <button type="submit" class="Newbtn">Create Account</button>
+            <button type="button" class="btn cancel" onclick="closeSignForm()">Close</button>
+          </form>
       </div>
     </body>
 </html>

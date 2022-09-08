@@ -37,11 +37,21 @@
       
 .Right-Margin { grid-area: Right-Margin; }
 
-.my-custom-scrollbar {
+/* .my-custom-scrollbar {
   position: relative;
   height: 200px;
   overflow: auto;
   }
   .table-wrapper-scroll-y {
   display: block;
-  }
+  } */
+  
+  .message {margin-bottom: 15px;
+    margin: 0;
+    padding: .3rem;
+    background-color: #eee;
+    font: 1rem 'Fira Sans', sans-serif;
+    border: 2px ridge}
+  .image {float:left; margin-right: 10px; }
+  .user {float:left; font-weight:bold; color:#009; margin-bottom: 5px; }
+  .content { margin-left: 30px;font-style:italic; color:#; }

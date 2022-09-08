@@ -31,11 +31,11 @@
       
 .Menu-Bar { grid-area: Menu-Bar; }
       
-.Left-Margin { grid-area: Left-Margin; }
+.Left-Margin { grid-area: Left-Margin; width: calc(100% / 3);}
       
-.Media { grid-area: Media; }
+.Media { grid-area: Media; width: calc(100% / 3); }
       
-.Right-Margin { grid-area: Right-Margin; }
+.Right-Margin { grid-area: Right-Margin; width: calc(100% / 3); }
 
 /* .my-custom-scrollbar {
   position: relative;

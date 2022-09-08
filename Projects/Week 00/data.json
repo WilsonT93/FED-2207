@@ -1,37 +1,36 @@
 {
-    "users": [
-        {
-            username:"BobLeeSwagger",
-            password:"Bob#01",
-            email:"BobLee@gmail.com",
-            name:"Bob Lee",
-            dob:"01/01/1993",
-            uId:"1"           
-        },
-        {
-            username:"MikeJones02",
-            password:"MJones#1",
-            email:"mikejones@gmail.com" 
-            name:"Mike Jones",
-            dob:"01/01/1993",
-            uId:"2"           
-        },
-        {
-            username:"JWalker91",
-            password:"WalkJ#01",
-            email:"jameswalker@gmail.com"
-            name:"James Walker",
-            dob:"01/01/1993",
-            uId:"3"            
+    "users": {
+        
+        "user1": {
+            "username":"BobLeeSwagger",
+            "password":"Bob#01",
+            "email":"BobLee@gmail.com",
+            "name":"Bob Lee",
+            "dob":"01/01/1993",
+            "uId":"1"      
         },
         
+        "user2": {
+            "username":"MikeJones01",
+            "password":"MJones#1",
+            "email":"mikejones@gmail.com",
+            "name":"Mike Jones",
+            "dob":"01/01/1993",
+            "uId":"2"          
+        },
         
-    ],
-
-    "posts":[
-        {
-        text:"Some Text",
-        uId:"1"
+        "user3":{
+            "username":"JWalker91",
+            "password":"WalkJ#01",
+            "email":"jameswalker@gmail.com",
+            "name":"James Walker",
+            "dob":"01/01/1993",
+            "uId":"3"   
+            }     
+        },
+    
+    "posts": {    
+            "text":"Some Text",
+            "uId":"1"
         }
-    ]
-}
+    }

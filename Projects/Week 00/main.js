@@ -1,11 +1,11 @@
-function User (username, password, email, name, dob, uid) {
+/* function User (username, password, email, name, dob, uid) {
     this.username = username;
     this.password = password;
     this.email = email;
     this.name = name;
     this.dob = dob;
     this.uid = uid;
-  }
+  } */
 /*   const Post = function (text, uid) {
     this.text = text;
     this.dateCreated = Date.now();
@@ -15,7 +15,7 @@ function User (username, password, email, name, dob, uid) {
 //var data, users;
 //const usersList = document.getElementById("users")
 
- $(document).ready(function (){
+ /* $(document).ready(function (){
   let endpointurl = "https://twitter-clone-bce1e-default-rtdb.firebaseio.com/";
   let JSONext = ".json"
   
@@ -39,4 +39,14 @@ function User (username, password, email, name, dob, uid) {
     success: (data) => console.log(data),
    })
   }
-    })
+    }) */
+
+fetch ("https://jsonplaceholder.typicode.com/posts")
+    .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+      })
+      .catch((error)) => {
+          console.log(error);
+      };
+    

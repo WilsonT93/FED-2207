@@ -1,33 +1,37 @@
-
 .Logo{
     font-family: "Monaco", monospace;
     color: lightgray;
-    font-size: 100px;
+    font-size: 100%;
     max-width: 50%;
     max-height: 50%;
 }
-.container{
-    margin: 0;
-    background-color: #21407c;
-    width: 100vw;
-    height: 100vh;
-    
-    font-family: 'Quicksand', sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    
-    display: grid;
-    
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 1fr 1fr;
-    
-    gap: 10px;
-    
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-.header {
-    grid-column-start: 1;
-    grid-column-end:4;
-}
+.container {  display: grid;
+        grid-template-columns: 0.8fr 1.4fr 0.9fr;
+        grid-template-rows: 1.3fr 4fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "Header Header Header"
+          "Left-Margin Media Right-Margin";
+      }
+      
+.Header {  display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          ". . ."
+          ". . ."
+          "Menu-Bar Menu-Bar Menu-Bar";
+        grid-area: Header;
+      }
+      
+.Menu-Bar { grid-area: Menu-Bar; }
+      
+.Left-Margin { grid-area: Left-Margin; }
+      
+.Media { grid-area: Media; }
+      
+.Right-Margin { grid-area: Right-Margin; }
+      

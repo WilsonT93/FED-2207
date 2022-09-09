@@ -6,47 +6,49 @@
     this.dob = dob;
     this.uid = uid;
   } */
-/*   const Post = function (text, uid) {
-    this.text = text;
-    this.dateCreated = Date.now();
-    this.dateUpdated = Date.now();
-    this.uid = uid;
-  }; */
-//var data, users;
-//const usersList = document.getElementById("users")
 
- /* $(document).ready(function (){
-  let endpointurl = "https://twitter-clone-bce1e-default-rtdb.firebaseio.com/";
-  let JSONext = ".json"
-  
-  // AJAX GET
-  $.ajax({
-    type: "GET",
-    dataType: "Json",
-    url: endpointurl+JSONext,
-  success: function (data, status, xhr) {
-    console.log(data)
-}
- });
- 
- // AJAX POST
- function addUserAPI () {
- $.ajax({
-    type: "POST",
-    dataType: JSON.stringify(User),
-    url: endpointurl+JSONext,
-    data: userOBJ,
-    success: (data) => console.log(data),
-   })
-  }
-    }) */
-
-fetch ("https://jsonplaceholder.typicode.com/posts")
+// Fetch (Get) Data
+fetch ("https://twitter-clone-bce1e-default-rtdb.firebaseio.com/")
     .then((res) => res.json())
       .then((data) => {
         console.log(data);
       })
-      .catch((error)) => {
+      .catch((error) => {
           console.log(error);
-      };
+      });
+// fetch method to POST data
+  fetch ("https://twitter-clone-bce1e-default-rtdb.firebaseio.com/", {
+      method: 'POST',
+      body: JSON.stringify ({
+        username: 'foobar1',
+        password: 'bar1',
+        email: 'foobar@gmail.com',
+        name: 'Foo Bar',
+        uId: 0
+      }),
+      headers: {
+        "Content-type": "application/json; charset=utf-8"
+      }
+  })
+      .then(res => res.json())
+      .then(data => console.log(data));
+
+/*  // fetch method to PUT (update) data
+   fetch ("https://twitter-clone-bce1e-default-rtdb.firebaseio.com/", {
+    method:'PUT',
+    body: JSON.stringify ({
+      title: 'foo',
+      body: 'bar',
+      userId: 0
+    }),
+    headers: {
+      "Content-type": "application/json; charset=utf-8"
+    }
+})
+    .then(res => res.json())
+    .then(data => console.log(data));
     
+  // fetch method to DELETE data
+    fetch ("https://twitter-clone-bce1e-default-rtdb.firebaseio.com/",{
+      method: 'DELETE'
+    }) */

@@ -42,3 +42,47 @@ function generateTable(table, data) {
 let table = document.querySelector("table");
 let data = Object.keys(customers[0]);    //generateTableHead(table, data);
 generateTable(table, customers);
+
+// Fetch (Get) Data
+fetch ("https://jsonplaceholder.typicode.com/posts")
+    .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+      })
+      .catch((error) => {
+          console.log(error);
+      });
+// fetch method to POST data
+  fetch ("https://jsonplaceholder.typicode.com/posts", {
+      method: 'POST',
+      body: JSON.stringify ({
+        title: 'foo',
+        body: 'bar',
+        userId: 0
+      }),
+      headers: {
+        "Content-type": "application/json; charset=utf-8"
+      }
+  })
+      .then(res => res.json())
+      .then(data => console.log(data));
+
+ // fetch method to PUT (update) data
+   fetch ("https://jsonplaceholder.typicode.com/posts", {
+    method:'PUT',
+    body: JSON.stringify ({
+      title: 'foo',
+      body: 'bar',
+      userId: 0
+    }),
+    headers: {
+      "Content-type": "application/json; charset=utf-8"
+    }
+})
+    .then(res => res.json())
+    .then(data => console.log(data));
+    
+  // fetch method to DELETE data
+    fetch ("https://jsonplaceholder.typicode.com/posts",{
+      method: 'DELETE'
+    })

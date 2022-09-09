@@ -11,6 +11,11 @@
     max-height: 50%;
 }
 
+.img-fluid{
+  width: 100vw;
+  height: 100vh;
+}
+
 /*Log in Button CSS*/
 {box-sizing: border-box;}
 

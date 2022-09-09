@@ -57,11 +57,14 @@ body {
   border-color: #21407c;
   border-width: 5px;
   min-height: 100vh;
+  padding: 20px;
 }
 
 /* Middle column */
 .column.middle {
   width: 50%;
+  padding: 20px;
+  overflow-y: scroll;
 }
 
 /* Clear floats after the columns */
@@ -78,18 +81,6 @@ body {
   }
 }
 
-.profile{
-  width: 25%;
-}
 .profile1{
-  width: 50%;
-}
-
-.table{
-  background-color: gray;
-  padding-top: 100px;
-}
-
-#notif{
-  badge badge-lig
+  width: 60%;
 }

@@ -7,7 +7,7 @@
     this.uid = uid;
   } */
 
-// Fetch (Get) Data
+/* // Fetch (Get) Data
 fetch ("https://twitter-clone-bce1e-default-rtdb.firebaseio.com/")
     .then((res) => res.json())
       .then((data) => {
@@ -33,7 +33,7 @@ fetch ("https://twitter-clone-bce1e-default-rtdb.firebaseio.com/")
       .then(res => res.json())
       .then(data => console.log(data));
 
-/*  // fetch method to PUT (update) data
+ // fetch method to PUT (update) data
    fetch ("https://twitter-clone-bce1e-default-rtdb.firebaseio.com/", {
     method:'PUT',
     body: JSON.stringify ({

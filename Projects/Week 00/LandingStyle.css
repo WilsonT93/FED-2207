@@ -7,6 +7,14 @@ body {
   margin: 0;
 }
 
+#h1 {
+  text-shadow: 2px 2px 3px #21407c;
+  font-family: Monaco, monospace;
+  color: white;
+  font-size: 80px
+}
+
+
 /* Style the header */
 .header {
   background-image: url("BkgPhoto.png");
@@ -48,6 +56,7 @@ body {
   border-style: ridge ;
   border-color: #21407c;
   border-width: 5px;
+  min-height: 100vh;
 }
 
 /* Middle column */
@@ -69,22 +78,18 @@ body {
   }
 }
 
+.profile{
+  width: 25%;
+}
+.profile1{
+  width: 50%;
+}
 
-/* .my-custom-scrollbar {
-  position: relative;
-  height: 200px;
-  overflow: auto;
-  }
-  .table-wrapper-scroll-y {
-  display: block;
-  } */
-  
-  .message {margin-bottom: 15px;
-    margin: 0;
-    padding: .3rem;
-    background-color: #eee;
-    font: 1rem 'Fira Sans', sans-serif;
-    border: 2px ridge}
-  .image {float:left; margin-right: 10px; }
-  .user {float:left; font-weight:bold; color:#009; margin-bottom: 5px; }
-  .content { margin-left: 30px;font-style:italic; color:#; }
+.table{
+  background-color: gray;
+  padding-top: 100px;
+}
+
+#notif{
+  badge badge-lig
+}
